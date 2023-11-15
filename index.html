@@ -6,7 +6,11 @@ title: Home
 <header>
   <h1>{{ title }}</h1>
 </header>
-
+<body>
+  {%- for photo in photos.0apgfsq.media -%}
+  <img src="{{photo.src.tiny}}" />
+  {%- endfor -%}
+</body>
 <footer>
   <hr />
   <p>
