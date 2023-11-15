@@ -1,12 +1,11 @@
 ---
+layout: layout.njk
 site: CPSC 349 - Project 1
 ---
-
-<head>
-  <title>{{ title }} - {{ site }}</title>
-  <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
-</head>
-
 <body>
-  {{ content }}
+  <section>
+    {% for photo in photos.uq9nuzt.media-%}
+      <img onclick="location.href = '/photopage/{{photo.id}}.html';" src= {{photo.src.tiny}} alt={{photo.alt}}>
+    {% endfor -%}
+  </section>
 </body>

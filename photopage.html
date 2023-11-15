@@ -1,0 +1,22 @@
+---
+layout: layout.njk
+pagination:
+    data: photos.uq9nuzt.media
+    size: 1
+    alias: photo
+permalink: "photopage/{{photo.id}}.html"
+---
+
+<body>
+    
+    
+    <section>
+        <figure>
+            <img src= {{photo.src.large}} alt={{photo.alt}}>
+            <figcaption>{{photo.alt}}</figcaption>
+        </figure>
+    </section>   
+    <section>
+        <h1><a href= {{photo.photographer_url}}><i>Photographer: {{photo.photographer}}</i></a></h1>
+    </section>
+</body>
