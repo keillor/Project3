@@ -8,7 +8,10 @@ title: Home
 </header>
 <body>
   {%- for photo in photos.0apgfsq.media -%}
-  <img src="{{photo.src.tiny}}" onclick="{{}}" />
+  <img
+    src="{{photo.src.tiny}}"
+    onclick="location.href = '/fullsize/{{photo.id}}.html';"
+  />
   {%- endfor -%}
 </body>
 <footer>
