@@ -2,10 +2,16 @@
 layout: layout.njk
 site: CPSC 349 - Project 1
 ---
-<body>
-  <section>
-    {% for photo in photos.uq9nuzt.media-%}
-      <img onclick="location.href = '/photopage/{{photo.id}}.html';" src= {{photo.src.tiny}} alt={{photo.alt}}>
-    {% endfor -%}
-  </section>
-</body>
+<blockquote>
+  <i>Nature at its finest</i>
+</blockquote>
+
+
+<section>
+  {% for photo in photos.uq9nuzt.media-%}
+    <aside>
+      <img onclick="location.href = '/photopage/{{photo.id}}.html';" src= "{{photo.src.tiny}}" alt="{{photo.alt}}">
+    </aside>
+  {% endfor -%}
+</section>
+

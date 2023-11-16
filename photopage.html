@@ -7,16 +7,12 @@ pagination:
 permalink: "photopage/{{photo.id}}.html"
 ---
 
-<body>
-    
-    
-    <section>
-        <figure>
-            <img src= {{photo.src.large}} alt={{photo.alt}}>
-            <figcaption>{{photo.alt}}</figcaption>
-        </figure>
-    </section>   
-    <section>
-        <h1><a href= {{photo.photographer_url}}><i>Photographer: {{photo.photographer}}</i></a></h1>
-    </section>
-</body>
+<section>
+    <figure>
+        <img src= "{{photo.src.large}}" alt="{{photo.alt}}">
+        <p>{{photo.alt}}</p>
+    </figure>
+</section>   
+<section>
+    <a href= {{photo.photographer_url}}><h4>Source: {{photo.photographer}}</h4></a>
+</section>
