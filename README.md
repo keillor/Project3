@@ -1,3 +1,10 @@
+# Group Members
+
+- KJ Jennings
+- Victoria Parry
+- Andrew Delos Reyes
+- Arish Imam
+
 # Background
 
 A static site generator (SSG) is a tool that generates a full static HTML website based on raw data and a set of templates. Essentially, a static site generator automates the task of coding individual HTML pages and gets those pages ready to serve to users ahead of time. Because these HTML pages are pre-built, they can load very quickly in users' browsers.
